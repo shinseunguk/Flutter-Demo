@@ -3,18 +3,21 @@ import 'screens/Chapter1/hello_word_page.dart';
 import 'screens/placeholder_page.dart';
 import 'screens/Chapter2/column_row_table_page.dart';
 import 'screens/Chapter3/stack_page.dart';
+import 'screens/Chapter4/gesture_detector_page.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
     '핵심 강좌 1강 (Hello World 출력 및 Scaffold 뼈대 구성)',
     '핵심 강좌 2강 (Column, Row 테이블 구성)',
     '핵심 강좌 3강 (Stack 사용하여 여러 위젯 중첩하기)',
+    '핵심 강좌 4강 (GestureDetector로 터치 이벤트 처리하기)',
   ];
 
   final Map<String, Widget> screens = {
     '핵심 강좌 1강 (Hello World 출력 및 Scaffold 뼈대 구성)': HelloWorldPage(),
     '핵심 강좌 2강 (Column, Row 테이블 구성)': ColumnRowTablePage(),
-    '핵심 강좌 3강 (Stack 사용하여 여러 위젯 중첩하기)': StackPage(), // PlaceholderPage는 예시로 사용
+    '핵심 강좌 3강 (Stack 사용하여 여러 위젯 중첩하기)': StackPage(),
+    '핵심 강좌 4강 (GestureDetector로 터치 이벤트 처리하기)': GestureDetectorPage(),
   };
 
   @override
