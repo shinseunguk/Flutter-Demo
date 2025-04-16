@@ -6,12 +6,17 @@ class HelloWorldPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
+        iconTheme: const IconThemeData(color: Colors.white), // 뒤로가기 아이콘 색상 설정
         title: const Text(
           "핵심 강좌 1강\n(Hello World 출력 및 Scaffold 뼈대 구성)",
           textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 17), // 글자크기 조절
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold, // 텍스트를 굵게 처리
+            fontSize: 17, // 글자크기 조절
+          ),
         ),
+        backgroundColor: Colors.blue, // 원하는 색상으로 변경
       ),
       // drawer: Drawer(
       //   child: ListView(
