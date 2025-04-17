@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_demo/screens/Chapter5/list_view_page.dart';
-import 'screens/Chapter1/hello_word_page.dart';
 import 'screens/placeholder_page.dart';
+import 'screens/Chapter1/hello_word_page.dart';
 import 'screens/Chapter2/column_row_table_page.dart';
 import 'screens/Chapter3/stack_page.dart';
 import 'screens/Chapter4/gesture_detector_page.dart';
 import 'screens/Chapter5/list_view_page.dart';
+import 'screens/Chapter6/list_view_builder_page.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
@@ -14,6 +14,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 3강 (Stack 사용하여 여러 위젯 중첩하기)',
     '핵심 강좌 4강 (GestureDetector로 터치 이벤트 처리하기)',
     '핵심 강좌 5강 (ListView 사용하여 피드 만들기)',
+    '핵심 강좌 6강 (ListView 효율적으로 사용하기)',
   ];
 
   final Map<String, Widget> screens = {
@@ -22,6 +23,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 3강 (Stack 사용하여 여러 위젯 중첩하기)': StackPage(),
     '핵심 강좌 4강 (GestureDetector로 터치 이벤트 처리하기)': GestureDetectorPage(),
     '핵심 강좌 5강 (ListView 사용하여 피드 만들기)': ListViewPage(),
+    '핵심 강좌 6강 (ListView 효율적으로 사용하기)': ListViewBuilderPage(),
   };
 
   @override
