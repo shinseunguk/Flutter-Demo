@@ -8,6 +8,7 @@ import 'screens/Chapter5/list_view_page.dart';
 import 'screens/Chapter6/list_view_builder_page.dart';
 import 'screens/Chapter7/grid_view_page.dart';
 import 'screens/Chapter8/grid_view_builder_page.dart';
+import 'screens/Chapter9/scroll_page_view.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
@@ -19,6 +20,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 6강 (ListView 효율적으로 사용하기)',
     '핵심 강좌 7강 (GridView 사용하기)',
     '핵심 강좌 8강 (GridView 효율적으로 사용하기)',
+    '핵심 강좌 9강 (스크롤 기능 구현)',
   ];
 
   final Map<String, Widget> screens = {
@@ -30,6 +32,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 6강 (ListView 효율적으로 사용하기)': ListViewBuilderPage(),
     '핵심 강좌 7강 (GridView 사용하기)': GridViewPage(),
     '핵심 강좌 8강 (GridView 효율적으로 사용하기)': GridViewBuilderPage(),
+    '핵심 강좌 9강 (스크롤 기능 구현)': ScrollPageView(),
   };
 
   @override
