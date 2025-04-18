@@ -8,10 +8,10 @@ import 'screens/Chapter5/list_view_page.dart';
 import 'screens/Chapter6/list_view_builder_page.dart';
 import 'screens/Chapter7/grid_view_page.dart';
 import 'screens/Chapter8/grid_view_builder_page.dart';
-import 'screens/Chapter9/scroll_page_view.dart';
-import 'screens/Chapter10/align_page_view.dart';
-import 'screens/Chapter11/alert_dialog_view.dart';
-import 'screens/Chapter12/show_image_view.dart';
+import 'screens/Chapter9/scroll_page.dart';
+import 'screens/Chapter10/align_page.dart';
+import 'screens/Chapter11/alert_dialog_page.dart';
+import 'screens/Chapter12/show_image_page.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
@@ -38,10 +38,10 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 6강 (ListView 효율적으로 사용하기)': ListViewBuilderPage(),
     '핵심 강좌 7강 (GridView 사용하기)': GridViewPage(),
     '핵심 강좌 8강 (GridView 효율적으로 사용하기)': GridViewBuilderPage(),
-    '핵심 강좌 9강 (스크롤 기능 구현)': ScrollPageView(),
-    '핵심 강좌 10강 (Align - 정렬하기)': AlignPageView(),
-    '핵심 강좌 11강 (AlertDialog - 팝업창 띄우기)': AlertDialogView(),
-    '핵심 강좌 12강 (이미지 보여주기)': ShowImageView(),
+    '핵심 강좌 9강 (스크롤 기능 구현)': ScrollPage(),
+    '핵심 강좌 10강 (Align - 정렬하기)': AlignPage(),
+    '핵심 강좌 11강 (AlertDialog - 팝업창 띄우기)': AlertDialogPage(),
+    '핵심 강좌 12강 (이미지 보여주기)': ShowImagePage(),
   };
 
   @override

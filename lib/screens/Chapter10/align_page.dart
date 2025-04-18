@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class AlignPageView extends StatefulWidget {
-  const AlignPageView({super.key});
+class AlignPage extends StatefulWidget {
+  const AlignPage({super.key});
 
   @override
-  State<AlignPageView> createState() => _AlignPageViewState();
+  State<AlignPage> createState() => _AlignPageState();
 }
 
-class _AlignPageViewState extends State<AlignPageView> {
+class _AlignPageState extends State<AlignPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

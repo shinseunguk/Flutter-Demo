@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ShowImageView extends StatefulWidget {
-  const ShowImageView({super.key});
+class ShowImagePage extends StatefulWidget {
+  const ShowImagePage({super.key});
 
   @override
-  State<ShowImageView> createState() => _ShowImageViewState();
+  State<ShowImagePage> createState() => _ShowImagePageState();
 }
 
-class _ShowImageViewState extends State<ShowImageView> {
+class _ShowImagePageState extends State<ShowImagePage> {
   String url =
       "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=800&h=600&fit=crop&";
   // String url2 = "https://picsum.photos/id/237/800/600";

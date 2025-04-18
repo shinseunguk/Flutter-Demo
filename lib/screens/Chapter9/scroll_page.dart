@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ScrollPageView extends StatefulWidget {
-  const ScrollPageView({super.key});
+class ScrollPage extends StatefulWidget {
+  const ScrollPage({super.key});
 
   @override
-  State<ScrollPageView> createState() => _ScrollPageViewState();
+  State<ScrollPage> createState() => _ScrollPageState();
 }
 
-class _ScrollPageViewState extends State<ScrollPageView> {
+class _ScrollPageState extends State<ScrollPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
