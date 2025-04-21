@@ -17,6 +17,7 @@ import 'screens/Chapter14/gradation_page.dart';
 import 'screens/Chapter15/button_page.dart';
 import 'screens/Chapter16/navigator_page.dart';
 import 'screens/Chapter17/youtube_page.dart';
+import 'screens/Chapter18/load_json_page.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
@@ -37,6 +38,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 15강 (버튼 만들기)',
     '핵심 강좌 16강 (다른 화면으로 이동(페이지 이동 - Navigator 사용))',
     '핵심 강좌 17강 (유튜브 영상 삽입)',
+    '핵심 강좌 18강 (JSON 데이터 불러오기 - Future 사용)',
   ];
 
   final Map<String, Widget> screens = {
@@ -57,6 +59,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 15강 (버튼 만들기)': ButtonPage(),
     '핵심 강좌 16강 (다른 화면으로 이동(페이지 이동 - Navigator 사용))': NavigatorPage(),
     '핵심 강좌 17강 (유튜브 영상 삽입)': YoutubePage(),
+    '핵심 강좌 18강 (JSON 데이터 불러오기 - Future 사용)': LoadJsonPage(),
   };
 
   @override
