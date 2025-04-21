@@ -63,26 +63,28 @@ class MainListPage extends StatelessWidget {
         ),
         backgroundColor: Colors.blue, // 원하는 색상으로 변경
       ),
-      body: ListView.builder(
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(
-              items[index],
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
-            ),
-            trailing: Icon(Icons.arrow_forward), // 리스트 끝에 아이콘 추가
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder:
-                      (context) => screens[items[index]] ?? PlaceholderPage(),
-                ),
-              );
-            },
-          );
-        },
+      body: SafeArea(
+        child: ListView.builder(
+          itemCount: items.length,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text(
+                items[index],
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+              ),
+              trailing: Icon(Icons.arrow_forward), // 리스트 끝에 아이콘 추가
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder:
+                        (context) => screens[items[index]] ?? PlaceholderPage(),
+                  ),
+                );
+              },
+            );
+          },
+        ),
       ),
     );
   }
