@@ -18,6 +18,7 @@ import 'screens/Chapter15/button_page.dart';
 import 'screens/Chapter16/navigator_page.dart';
 import 'screens/Chapter17/youtube_page.dart';
 import 'screens/Chapter18/load_json_page.dart';
+import 'screens/Chapter19/disk_save_load_page.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
@@ -39,6 +40,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 16강 (다른 화면으로 이동(페이지 이동 - Navigator 사용))',
     '핵심 강좌 17강 (유튜브 영상 삽입)',
     '핵심 강좌 18강 (JSON 데이터 불러오기 - Future 사용)',
+    '핵심 강좌 19강 (디스크에 간단한 데이터 저장 및 불러오기 - SharedPreferences 사용)',
   ];
 
   final Map<String, Widget> screens = {
@@ -60,6 +62,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 16강 (다른 화면으로 이동(페이지 이동 - Navigator 사용))': NavigatorPage(),
     '핵심 강좌 17강 (유튜브 영상 삽입)': YoutubePage(),
     '핵심 강좌 18강 (JSON 데이터 불러오기 - Future 사용)': LoadJsonPage(),
+    '핵심 강좌 19강 (디스크에 간단한 데이터 저장 및 불러오기 - SharedPreferences 사용)': DiskSaveLoadPage(),
   };
 
   @override
@@ -89,8 +92,7 @@ class MainListPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder:
-                        (context) => screens[items[index]] ?? PlaceholderPage(),
+                    builder: (context) => screens[items[index]] ?? PlaceholderPage(),
                   ),
                 );
               },
