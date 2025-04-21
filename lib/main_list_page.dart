@@ -19,6 +19,7 @@ import 'screens/Chapter16/navigator_page.dart';
 import 'screens/Chapter17/youtube_page.dart';
 import 'screens/Chapter18/load_json_page.dart';
 import 'screens/Chapter19/disk_save_load_page.dart';
+import 'screens/Chapter20/navigation_bar_page.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
@@ -41,6 +42,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 17강 (유튜브 영상 삽입)',
     '핵심 강좌 18강 (JSON 데이터 불러오기 - Future 사용)',
     '핵심 강좌 19강 (디스크에 간단한 데이터 저장 및 불러오기 - SharedPreferences 사용)',
+    '핵심 강좌 20강 (Bottom Navigation Bar, 화면 하단 네비게이션바 배치 및 setState 사용)',
   ];
 
   final Map<String, Widget> screens = {
@@ -63,6 +65,7 @@ class MainListPage extends StatelessWidget {
     '핵심 강좌 17강 (유튜브 영상 삽입)': YoutubePage(),
     '핵심 강좌 18강 (JSON 데이터 불러오기 - Future 사용)': LoadJsonPage(),
     '핵심 강좌 19강 (디스크에 간단한 데이터 저장 및 불러오기 - SharedPreferences 사용)': DiskSaveLoadPage(),
+    '핵심 강좌 20강 (Bottom Navigation Bar, 화면 하단 네비게이션바 배치 및 setState 사용)': NavigationBarPage(),
   };
 
   @override
