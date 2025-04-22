@@ -39,6 +39,7 @@ dependencies:
   dio:
   rxdart:
   http:
+  provider:
 
 dev_dependencies:
   flutter_test:
