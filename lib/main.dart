@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo/screens/Chapter24/locator/locator.dart';
 import 'main_list_page.dart';
 
 void main() {
+  initLocator(); // GetIt 초기화
   runApp(MyApp());
 }
 

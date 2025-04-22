@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/screens/Chapter23/provider/album_provider_two.dart';
+import 'package:flutter_demo/screens/Chapter24/locator/locator.dart';
+import 'package:flutter_demo/screens/Chapter24/view/get_it_page.dart';
 import 'package:provider/provider.dart';
 import 'screens/placeholder_page.dart';
 import 'screens/Chapter1/hello_word_page.dart';
@@ -25,9 +27,11 @@ import 'screens/Chapter20/navigation_bar_page.dart';
 import 'screens/Chapter21/refresh_indicator_page.dart';
 import 'screens/Chapter22/view/album_view.dart';
 import 'screens/Chapter23/view/album_view_two.dart';
+import 'screens/Chapter24/view/get_it_page.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
+    '핵심 강좌 24강 (상태 관리 3 - get_it 사용)',
     '핵심 강좌 23강 (상태 관리 2 - Provider 패턴)',
     '핵심 강좌 22강 (상태 관리 1 - BLoC 패턴)',
     '핵심 강좌 21강 (Refresh Indicator - 아래로 스와이프하여 새로고침)',
@@ -54,6 +58,7 @@ class MainListPage extends StatelessWidget {
   ];
 
   final Map<String, Widget> screens = {
+    '핵심 강좌 24강 (상태 관리 3 - get_it 사용)': GetItPage(),
     '핵심 강좌 23강 (상태 관리 2 - Provider 패턴)': ChangeNotifierProvider(
       create: (context) => AlbumProviderTwo(),
       child: AlbumViewTwo(),
