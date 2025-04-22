@@ -30,9 +30,11 @@ import 'screens/Chapter23/view/album_view_two.dart';
 import 'screens/Chapter24/view/get_it_page.dart';
 import 'screens/Chapter25/number_count_home_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart' as riverpod;
+import 'screens/Chapter26/getx_page.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
+    '핵심 강좌 26강 (상태 관리 5 - GetX 사용 1: Simple State Manager)',
     '핵심 강좌 25강 (상태 관리 4 - Riverpod 사용)',
     '핵심 강좌 24강 (상태 관리 3 - get_it 사용)',
     '핵심 강좌 23강 (상태 관리 2 - Provider 패턴)',
@@ -61,6 +63,7 @@ class MainListPage extends StatelessWidget {
   ];
 
   final Map<String, Widget> screens = {
+    '핵심 강좌 26강 (상태 관리 5 - GetX 사용 1: Simple State Manager)': GetXPage(),
     '핵심 강좌 25강 (상태 관리 4 - Riverpod 사용)': riverpod.ProviderScope(child: NumberCountHomePage()),
     '핵심 강좌 24강 (상태 관리 3 - get_it 사용)': GetItPage(),
     '핵심 강좌 23강 (상태 관리 2 - Provider 패턴)': provider.ChangeNotifierProvider(

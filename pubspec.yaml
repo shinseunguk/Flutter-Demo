@@ -42,6 +42,7 @@ dependencies:
   provider:
   get_it:
   flutter_riverpod:
+  get:
 
 dev_dependencies:
   flutter_test:
