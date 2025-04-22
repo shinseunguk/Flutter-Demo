@@ -21,9 +21,11 @@ import 'screens/Chapter18/load_json_page.dart';
 import 'screens/Chapter19/disk_save_load_page.dart';
 import 'screens/Chapter20/navigation_bar_page.dart';
 import 'screens/Chapter21/refresh_indicator_page.dart';
+import 'screens/Chapter22/view/album_view.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
+    '핵심 강좌 22강 (상태 관리 1 - BLoC 패턴)',
     '핵심 강좌 21강 (Refresh Indicator - 아래로 스와이프하여 새로고침)',
     '핵심 강좌 20강 (Bottom Navigation Bar, 화면 하단 네비게이션바 배치 및 setState 사용)',
     '핵심 강좌 19강 (디스크에 간단한 데이터 저장 및 불러오기 - SharedPreferences 사용)',
@@ -48,6 +50,7 @@ class MainListPage extends StatelessWidget {
   ];
 
   final Map<String, Widget> screens = {
+    '핵심 강좌 22강 (상태 관리 1 - BLoC 패턴)': AlbumView(),
     '핵심 강좌 21강 (Refresh Indicator - 아래로 스와이프하여 새로고침)': RefreshIndicatorPage(),
     '핵심 강좌 20강 (Bottom Navigation Bar, 화면 하단 네비게이션바 배치 및 setState 사용)': NavigationBarPage(),
     '핵심 강좌 19강 (디스크에 간단한 데이터 저장 및 불러오기 - SharedPreferences 사용)': DiskSaveLoadPage(),
