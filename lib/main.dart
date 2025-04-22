@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/screens/Chapter24/locator/locator.dart';
 import 'main_list_page.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
   initLocator(); // GetIt 초기화
-  runApp(MyApp());
+  runApp(
+    ProviderScope(
+      // Riverpod 상태 관리 활성화
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
