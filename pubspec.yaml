@@ -45,6 +45,11 @@ dependencies:
   get:
   flutter_local_notifications:
 
+  # WebView
+  webview_flutter:
+  webview_flutter_android:
+  webview_flutter_wkwebview:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
