@@ -34,9 +34,11 @@ import 'screens/Chapter26/getx_page.dart';
 import 'screens/Chapter27/getx_obs_page.dart';
 import 'screens/Chapter28/local_notifications_page.dart';
 import 'screens/Chapter29/webview_page.dart';
+import 'screens/Chapter30/form_submit_page.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
+    '핵심 강좌 30강 (Form - 양식 제출)',
     '핵심 강좌 29강 (웹뷰 - webview_flutter 구현하기)',
     '핵심 강좌 28강 (푸시 알림 보내기 - Local Notifications)',
     '핵심 강좌 27강 (상태 관리 6 - GetX 사용 2: Reactive State Manager)',
@@ -69,6 +71,7 @@ class MainListPage extends StatelessWidget {
   ];
 
   final Map<String, Widget> screens = {
+    '핵심 강좌 30강 (Form - 양식 제출)': FormSubmitPage(),
     '핵심 강좌 29강 (웹뷰 - webview_flutter 구현하기)': WebviewPage(),
     '핵심 강좌 28강 (푸시 알림 보내기 - Local Notifications)': LocalNotificationsPage(),
     '핵심 강좌 27강 (상태 관리 6 - GetX 사용 2: Reactive State Manager)': GetxObsPage(),
