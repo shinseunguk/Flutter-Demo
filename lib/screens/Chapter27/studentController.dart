@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 import 'studentModel.dart';
 
-class Studentcontroller extends GetxController {
+class StudentController extends GetxController {
   RxList<Rx<Student>> studentList =
       [
         Student(studentId: 1, studentName: 'Alice Smith', studentGrade: 'A').obs,
