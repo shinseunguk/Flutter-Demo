@@ -84,7 +84,7 @@ class _ListViewScrollPagenationPageState extends State<ListViewScrollPagenationP
       appBar: AppBar(
         iconTheme: const IconThemeData(color: Colors.white), // 뒤로가기 아이콘 색상 설정
         title: const Text(
-          '핵심 강좌 32강\n(ListView Scroll Pagination 구축)',
+          '핵심 강좌 33강\n(Carousel Slider - 자동 슬라이드, 인디케이터 만들기)',
           textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.white,
