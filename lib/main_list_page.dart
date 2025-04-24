@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_demo/screens/Chapter23/provider/album_provider_two.dart';
 import 'package:flutter_demo/screens/Chapter24/locator/locator.dart';
 import 'package:flutter_demo/screens/Chapter24/view/get_it_page.dart';
+import 'package:flutter_demo/screens/Chapter32/list_view_scroll_pagenation_page.dart';
 import 'package:provider/provider.dart' as provider;
 import 'screens/placeholder_page.dart';
 import 'screens/Chapter1/hello_word_page.dart';
@@ -39,6 +40,7 @@ import 'screens/Chapter31/view/CatListView.dart';
 
 class MainListPage extends StatelessWidget {
   final List<String> items = [
+    '핵심 강좌 32강 (ListView Scroll Pagination 구축)',
     '핵심 강좌 31강 (MVVM 패턴 적용)',
     '핵심 강좌 30강 (Form - 양식 제출)',
     '핵심 강좌 29강 (웹뷰 - webview_flutter 구현하기)',
@@ -73,6 +75,7 @@ class MainListPage extends StatelessWidget {
   ];
 
   final Map<String, Widget> screens = {
+    '핵심 강좌 32강 (ListView Scroll Pagination 구축)': ListViewScrollPagenationPage(),
     '핵심 강좌 31강 (MVVM 패턴 적용)': CatListView(),
     '핵심 강좌 30강 (Form - 양식 제출)': FormSubmitPage(),
     '핵심 강좌 29강 (웹뷰 - webview_flutter 구현하기)': WebviewPage(),
